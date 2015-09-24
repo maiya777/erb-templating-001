@@ -10,7 +10,7 @@ In this lab, you'll practice generating a simple site using ERB (Embedded Ruby).
 
 ### Movie Specs
 
-Before anything, you're going to need to create a simple Movie class. Instances of this class will have some basic attributes (title, release date, director, and summary). The class itself will need to implement a method that parses through a text file and creates Movie instances based upon the data in that file.
+Before anything, you're going to need to create a simple Movie class. Instances of this class will have some basic attributes (title, release date, director, and summary). The class itself will need to implement a method that parses through a text file and creates Movie instances based upon the data in that file. Data does not need to be persisted in a database.
 
 ### SiteGenerator Specs
 
