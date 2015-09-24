@@ -12,7 +12,10 @@ In this lab, you'll practice generating a simple site using ERB (Embedded Ruby).
 
 Before anything, you're going to need to create a simple Movie class. Instances of this class will have some basic attributes (title, release date, director, and summary). The class itself will need to implement a method that parses through a text file and creates Movie instances based upon the data in that file.
 
-### SiteGenerator Specs
+### #url
+Only standard characters should be used in URLs. You'll want to either remove these characters completely or convert them to their URL encoded counterpart. For example `'` turns into `%27` and '&' turns into '%26'.
+
+#### SiteGenerator Specs
 
 #### #make_index!
 
