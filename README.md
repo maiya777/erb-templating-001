@@ -15,6 +15,8 @@ Before anything, you're going to need to create a simple Movie class. Instances 
 ### #url
 Only standard characters should be used in URLs. You'll want to either remove these characters completely or convert them to their URL encoded counterpart. For example `'` turns into `%27` and '&' turns into '%26'.
 
+
+
 #### SiteGenerator Specs
 
 #### #make_index!
@@ -40,3 +42,5 @@ Once you've passed all of the specs, your site generator should work. Run `bin/g
 ## Resources
 * [Rasmus Ron Nielsen's Blog](http://www.rrn.dk/) - [Ruby's ERB Templating System: How Does It Work?](http://www.rrn.dk/rubys-erb-templating-system)
 * [Ruby Docs](http://www.ruby-doc.org/) - [Class: ERB](http://www.ruby-doc.org/stdlib-2.1.1/libdoc/erb/rdoc/ERB.html)
+* [Ruby Docs](http://www.ruby-doc.org/) - [URI::Escape](http://ruby-doc.org/stdlib-2.1.1/libdoc/uri/rdoc/URI/Escape.html)
+
