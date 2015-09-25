@@ -13,9 +13,9 @@ In this lab, you'll practice generating a simple site using ERB (Embedded Ruby).
 Before anything, you're going to need to create a simple Movie class. Instances of this class will have some basic attributes (title, release date, director, and summary). The class itself will need to implement a method that parses through a text file and creates Movie instances based upon the data in that file.
 
 ### #url
-Only standard characters should be used in URLs. You'll want to either remove these characters completely or convert them to their URL encoded counterpart. For example `'` turns into `%27` and '&' turns into '%26'.
+In the URI standard there are reserved characters and unsafe characters. The purpose of these reserved characters is to provide a set of delimiting characters that are distinguishable from other data within a URL. The unsafe characters can easily be misunderstood within your URL which can cause vulnerabilities such as HTML-injection and SQL-injection. You'll want to either remove these characters completely or better yet convert them to their encoded counterpart. For example `'` turns into `%27` and '&' turns into '%26'.
 
-
+Check out this awesome blog post on [URL Encoding](http://www.blooberry.com/indexdot/html/topics/urlencoding.htm). 
 
 #### SiteGenerator Specs
 
@@ -43,4 +43,5 @@ Once you've passed all of the specs, your site generator should work. Run `bin/g
 * [Rasmus Ron Nielsen's Blog](http://www.rrn.dk/) - [Ruby's ERB Templating System: How Does It Work?](http://www.rrn.dk/rubys-erb-templating-system)
 * [Ruby Docs](http://www.ruby-doc.org/) - [Class: ERB](http://www.ruby-doc.org/stdlib-2.1.1/libdoc/erb/rdoc/ERB.html)
 * [Ruby Docs](http://www.ruby-doc.org/) - [URI::Escape](http://ruby-doc.org/stdlib-2.1.1/libdoc/uri/rdoc/URI/Escape.html)
-
+* [Blooberry](http://www.blooberry.com/indexdot/html/index.html) - [URL Encoding](http://www.blooberry.com/indexdot/html/topics/urlencoding.htm)
+* [Perishable Press](https://perishablepress.com/) - [Unsafe Characters](https://perishablepress.com/stop-using-unsafe-characters-in-urls/)
