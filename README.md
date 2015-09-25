@@ -1,5 +1,3 @@
-
-
 # Templating with ERB
 
 ## Description
