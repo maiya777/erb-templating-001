@@ -6,6 +6,7 @@ describe 'Movie' do
   let(:director) { 'The Wachowski Brothers' }
   let(:summary) { 'A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.' }
   let(:the_matrix) { Movie.new(title, release_date, director, summary) }
+  let(:pans_labyrinth) {Movie.new("Pan's Labyrinth", 2006, "Guillermo del Toro", "In the fascist Spain of 1944, the bookish young stepdaughter of a sadistic army officer escapes into an eerie but captivating fantasy world.")}
   let(:titles) {[
     "The Matrix",
     "The Lego Movie",
@@ -98,6 +99,10 @@ describe 'Movie' do
     it 'gives a url-friendly version of the title with the .html extension' do
       expect(the_matrix.url).to eq('the_matrix.html')
     end
+
+    it 'makes URLs without using unsafe characters' do 
+      expect(pans_labyrinth.url).to eq('pans_labyrinth.html' || 'pan%27s_labyrinth.html' || 'pan%27s%20labyrinth.html')
+    end o
   end
 
   describe '::all' do
