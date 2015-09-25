@@ -79,7 +79,7 @@ describe 'SiteGenerator' do
       expect(the_matrix).to eq(comparison)
     end
 
-    it 'uses ERB' do
+    it 'uses the same ERB instance inside the block' do
       expect_any_instance_of(ERB).to receive(:result).at_least(25).times
       site_generator.generate_pages!
     end

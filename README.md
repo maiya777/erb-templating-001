@@ -22,7 +22,7 @@ For this method, you will build up a string and manually write it to a file, `_s
 
 #### #generate_pages!
 
-At this point, you should probably be annoyed about that whole `make_index!` method. Building up a string like that is lame. So we aren't going to be doing that again. For the `generate_pages!` method, you'll want to create an ERB template (in `lib/templates/movie.html.erb`) and use it to generate a page for each Movie instance.
+At this point, you should probably be annoyed about that whole `make_index!` method. Building up a string like that is lame. So we aren't going to be doing that again. For the `generate_pages!` method, you'll want to create an ERB template (in `lib/templates/movie.html.erb`) and use it to generate a page for each Movie instance. You should use one ERB instance inside of your block.
 
 Remember that you'll need to pass your current `binding` as an argument to the `ERB#result` method like this:
 
